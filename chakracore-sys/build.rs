@@ -144,7 +144,8 @@ mod build {
                 "--static",
                 if is_debug { "--debug" } else { "--test-build" },
                 &arg_jobs,
-                &arg_icu,
+                "-n",
+                //&arg_icu,
             ];
 
             match arch {
